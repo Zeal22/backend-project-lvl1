@@ -1,3 +1,11 @@
+/*
+ * readlineSync
+ * https://github.com/anseki/readline-sync
+ *
+ * Copyright (c) 2019 anseki
+ * Licensed under the MIT license.
+ */
+
 'use strict';
 
 var
