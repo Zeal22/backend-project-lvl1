@@ -1,3 +1,5 @@
 #!/usr/bin/env node
 
-console.log("Hi");
+import greeting from '../src/cli2.js';
+
+greeting();
