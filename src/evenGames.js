@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import randonGenerator from '../randomizer.js';
+import randomGenerator from '../src/randomizer.js';
 
 const number = randomGenerator(2, 11);
 
