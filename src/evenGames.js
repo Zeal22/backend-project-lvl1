@@ -11,7 +11,8 @@ const greeting = () => {
   console.log(`Hello, ${name}!`);
   console.log(`Answer "yes" if the number is even, otherwise answer "no".`);
   
-  const question = readlineSync.question(`Question: ${number}`); 
+  Console.log(`Question: ${number}`);
+  const answer = readlineSync.question('Your answer: ');
     
 };
 
