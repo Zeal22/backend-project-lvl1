@@ -39,10 +39,8 @@ const greeting = () => {
     }
     console.log('Correct!');
   }
-
   console.log(`Congratulations, ${name} you won!`);
 };
     
-};
 
 export default () => greeting();
