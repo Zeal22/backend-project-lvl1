@@ -16,7 +16,7 @@ const generateCorrectAnswer = () => {
     correctAnswer,
   };
 
-const greeting = () => {
+export default greeting = () => {
   console.log('Welcome to the Brain Even!');
 
   const name = readlineSync.question('May I have your name? ');
@@ -41,6 +41,3 @@ const greeting = () => {
   }
   console.log(`Congratulations, ${name} you won!`);
 };
-    
-
-export default greeting;
