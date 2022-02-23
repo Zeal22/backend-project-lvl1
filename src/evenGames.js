@@ -5,7 +5,7 @@ const number = randomGenerator(2, 11);
 const rounds = 3
 
 const generateCorrectAnswer = () => {
-  const number = generateRandomNum(2, 11);
+  const number = randomGenerator(2, 11);
 
   const question = number.toString();
 
