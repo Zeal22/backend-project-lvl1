@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import randonGenerator from '../randomizer.js';
+import randonGenerator from '../src/randomizer.js';
 
 const greeting = () => {
   console.log('Welcome to the Brain Even!');
