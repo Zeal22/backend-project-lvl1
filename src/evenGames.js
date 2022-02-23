@@ -14,7 +14,8 @@ const generateCorrectAnswer = () => {
   return {
     question,
     correctAnswer,
-  };
+  }
+};
 
   const greeting = () => {
   console.log('Welcome to the Brain Even!');
