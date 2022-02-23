@@ -43,4 +43,4 @@ const greeting = () => {
 };
     
 
-export default () => greeting();
+export default greeting();
