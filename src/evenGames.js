@@ -2,7 +2,8 @@ import readlineSync from 'readline-sync';
 import randomGenerator from '../src/randomizer.js';
 
 const number = randomGenerator(2, 11);
-const rounds = 3
+const rounds = 3;
+const isEven = (num) => num % 2 === 0;
 
 const generateCorrectAnswer = () => {
   const number = randomGenerator(2, 11);
