@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import randomGenerator from '/src/randomizer.js';
+import randomGenerator from './randomizer';
 
 const rounds = 3;
 const isEven = (num) => num % 2 === 0;
