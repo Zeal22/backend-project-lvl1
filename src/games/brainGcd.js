@@ -14,7 +14,9 @@ const generateQuestion = () => {
   const firstNumber = randomGenerator(2, 101);
   const secondNumber = randomGenerator(2, 101);
 
-  const correctAnswer = isCalc(firstNumber, secondNumber).toString();
+  const question = `${firstNumber} ${secondNumber}`;
+
+  const correctAnswer = isGcd(firstNumber, secondNumber).toString();
 
   return {
     question,
