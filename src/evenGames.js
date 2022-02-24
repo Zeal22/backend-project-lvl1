@@ -1,7 +1,6 @@
 import readlineSync from 'readline-sync';
 import randomGenerator from '/src/randomizer.js';
 
-
 const rounds = 3;
 const isEven = (num) => num % 2 === 0;
 
@@ -25,7 +24,7 @@ const greeting = () => {
 
   console.log(`Hello, ${name}!`);
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
-  
+
   for (let i = 0; i < rounds; i += 1) {
     const { question, correctAnswer } = generateCorrectAnswer();
 
@@ -43,5 +42,5 @@ const greeting = () => {
   }
   console.log(`Congratulations, ${name} you won!`);
 };
-  
-  export default greeting;
+
+export default greeting;
