@@ -2,7 +2,7 @@ import newGames from '../index.js';
 import randomGenerator from '../randomizer.js';
 
 const isGcd = (num1, num2) => {
-  if(!num2) {
+  if (!num2) {
     return num1;
   }
   return isGcd(num2, num1 % num2);
