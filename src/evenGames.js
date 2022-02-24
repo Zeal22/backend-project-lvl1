@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
-import randomGenerator from '../src/randomizer.js';
+import randomGenerator from './src/randomizer.js';
 
-const number = randomGenerator(2, 11);
+
 const rounds = 3;
 const isEven = (num) => num % 2 === 0;
 
@@ -15,16 +15,16 @@ const generateCorrectAnswer = () => {
   return {
     question,
     correctAnswer,
-  }
+  };
 };
 
-  const greeting = () => {
+const greeting = () => {
   console.log('Welcome to the Brain Even!');
 
   const name = readlineSync.question('May I have your name? ');
 
   console.log(`Hello, ${name}!`);
-  console.log(`Answer "yes" if the number is even, otherwise answer "no".`);
+  console.log('Answer "yes" if the number is even, otherwise answer "no".');
   
   for (let i = 0; i < rounds; i += 1) {
     const { question, correctAnswer } = generateCorrectAnswer();
