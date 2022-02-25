@@ -34,7 +34,7 @@ const greeting = () => {
 
     if (correctAnswer !== userAnswer) {
       console.log(
-        `${userAnswer} these is wrong answer. Correct answer is ${correctAnswer}.\nLets try again, ${name}!`,
+        `${userAnswer} these is wrong answer. Correct answer is ${correctAnswer}.\nLet's try again, ${name}!`,
       );
       return;
     }
