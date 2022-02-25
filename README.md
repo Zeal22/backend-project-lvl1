@@ -2,6 +2,7 @@
 [![Actions Status](https://github.com/Zeal22/backend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Zeal22/backend-project-lvl1/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/048e840a89030d3968fe/maintainability)](https://codeclimate.com/github/Zeal22/backend-project-lvl1/maintainability)
 [![GitHub Actions](https://github.com/Zeal22/backend-project-lvl1/actions/workflows/github-actions.yml/badge.svg)](https://github.com/Zeal22/backend-project-lvl1/actions/workflows/github-actions.yml)
+[![Make lint](https://github.com/Zeal22/backend-project-lvl1/actions/workflows/make_lint.yml/badge.svg)](https://github.com/Zeal22/backend-project-lvl1/actions/workflows/make_lint.yml)
 
 # Brain even Games
 [![asciicast](https://asciinema.org/a/lgySYRr7rRxBwcmMedOabNqPm.svg)](https://asciinema.org/a/lgySYRr7rRxBwcmMedOabNqPm)
