@@ -25,8 +25,10 @@ const generateQuestion = () => {
 
   numArray[missingNumber] = '..';
 
+  const questionStr = numArray.join(', ');
+
   return {
-    question: numArray.join(', '),
+    question: questionStr,
     correctAnswer,
   };
 };
