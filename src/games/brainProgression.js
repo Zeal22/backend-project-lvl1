@@ -3,7 +3,7 @@ import randomGenerator from '../randomizer.js';
 
 const questionToStart = 'What number is missing in the progression?';
 
-const massiveLength = randomGenerator(6, 10);
+const massiveLength = 10;
 
 const isProgression = () => {
   const numArray = [];
