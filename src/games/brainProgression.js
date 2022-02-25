@@ -1,4 +1,3 @@
-import { question } from 'readline-sync';
 import newGames from '../index.js';
 import randomGenerator from '../randomizer.js';
 
