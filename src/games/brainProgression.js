@@ -3,12 +3,13 @@ import randomGenerator from '../randomizer.js';
 
 const questionToStart = 'What number is missing in the progression?';
 
-const isProgression = (num1) => {
+const massiveLength = randomGenerator(6, 10);
+
+const isProgression = () => {
   const numArray = [];
   const interval = randomGenerator(2, 5);
-  const massiveLength = randomGenerator(6, 10);
   let temp = 0;
-  for (let i = 0; i <= massiveLength; i++) {
+  for (let i = 0; i <= massiveLength; i += 1) {
     temp += interval;
     numArray.push(temp);
   }
@@ -16,16 +17,16 @@ const isProgression = (num1) => {
 };
 
 const generateQuestion = () => {
-  const progression = numArray;
+  const numArray = isProgression(randomGenerator(5, 10));
 
-  const indexOfMissingNumber = randomGenerator(0, massiveLength);
+  const missingNumber = randomGenerator(0, massiveLength);
 
-  const correctAnswer = progression[indexOfMissingNumber].toString();
+  const correctAnswer = numArray[missingNumber].toString();
 
-  progression[indexOfMissingNumber] = '..';
+  numArray[missingNumber] = '..';
 
   return {
-    question: progression.join(', '),
+    question: numArray.join(', '),
     correctAnswer,
   };
 };
