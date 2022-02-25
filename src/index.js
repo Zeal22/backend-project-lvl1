@@ -18,7 +18,7 @@ const newGames = (generateGame, questionToStart) => {
     }
     console.log('Correct!');
   }
-  console.log(`Congratulations, ${name} you won!`);
+  console.log(`Congratulations, ${name}!`);
 };
 
 export default newGames;
