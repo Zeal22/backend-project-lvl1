@@ -40,7 +40,7 @@ const greeting = () => {
     }
     console.log('Correct!');
   }
-  console.log(`Congratulations, ${name} you won!`);
+  console.log(`Congratulations, ${name}!`);
 };
 
 export default greeting;
