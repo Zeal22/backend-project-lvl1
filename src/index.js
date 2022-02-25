@@ -13,7 +13,7 @@ const newGames = (generateGame, questionToStart) => {
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (correctAnswer !== userAnswer) {
-      console.log(`${userAnswer} these is wrong answer ;(. Correct answer is ${correctAnswer}. Lets try again ${name}!`);
+      console.log(`${userAnswer} these is wrong answer ;(. Correct answer is ${correctAnswer}. Let's try again, ${name}!`);
       return;
     }
     console.log('Correct!');
