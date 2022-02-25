@@ -37,7 +37,7 @@ const greeting = () => {
         `${userAnswer} these is wrong answer. Correct answer is ${correctAnswer}.`,
       );
       console.log(
-        `Lets try again ${name}!`,
+        `Lets try again, ${name}!`,
       );
       return;
     }
