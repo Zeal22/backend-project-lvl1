@@ -5,35 +5,27 @@ const questionToStart = 'What number is missing in the progression?';
 
 const massiveLength = 10;
 
-const isProgression = (
-  numberToStartProgression,
-  stepInProgression,
-) => {
-  const progression = [];
-  for (
-    let i = numberToStartProgression;
-    progression.length < massiveLength;
-    i += stepInProgression
-  ) {
-    progression.push(i);
+const isProgression = () => {
+  const numArray = [];
+  const interval = randomGenerator(2, 5);
+  let temp = 0;
+  for (let i = 0; i <= massiveLength; i += 1) {
+    temp += interval;
+    numArray.push(temp);
   }
-  return progression;
+  return numArray;
 };
 
 const generateQuestion = () => {
-  const progression = isProgression(
-    randomGenerator(2, 11),
-    randomGenerator(2, 11),
-    massiveLength,
-  );
+  const numArray = isProgression(randomGenerator(5, 10));
 
   const missingNumber = randomGenerator(0, massiveLength);
 
-  const correctAnswer = progression[missingNumber].toString();
+  const correctAnswer = numArray[missingNumber].toString();
 
-  progression[missingNumber] = '..';
+  numArray[missingNumber] = '..';
 
-  const questionStr = progression.join(', ');
+  const questionStr = numArray.join(', ');
 
   return {
     question: questionStr,
