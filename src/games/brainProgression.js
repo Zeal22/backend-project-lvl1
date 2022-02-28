@@ -28,7 +28,7 @@ const generateQuestion = () => {
   const questionStr = numArray.join(', ');
 
   return {
-    question:questionStr,
+    question: questionStr,
     correctAnswer,
   };
 };
