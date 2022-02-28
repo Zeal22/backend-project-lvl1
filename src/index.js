@@ -10,7 +10,7 @@ const newGames = (generateGame, questionToStart) => {
   for (let i = 0; i < rounds; i += 1) {
     const { question, correctAnswer } = generateGame();
 
-    console.log(`Question:${question}`);
+    console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (correctAnswer !== userAnswer) {
       console.log(`${userAnswer} these is wrong answer ;(. Correct answer is ${correctAnswer}. Let's try again, ${name}!`);
