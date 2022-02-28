@@ -25,7 +25,7 @@ const generateQuestion = () => {
 
   numArray[missingNumber] = '..';
 
-  const questionStr = numArray.join(', ');
+  const questionStr = numArray.join(' ');
 
   return {
     question: questionStr,
